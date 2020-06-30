@@ -48,17 +48,23 @@ namespace WindowsFormsApp1
 
         private void buttonDiv_Click(object sender, EventArgs e)
         {
-            var x = int.Parse(this.textBoxOP1.Text);
-            var y = int.Parse(this.textBoxOP2.Text);
-            var z = x + y;
-            if(y == 0)
+            try {
+                var x = int.Parse(this.textBoxOP1.Text);
+                var y = int.Parse(this.textBoxOP2.Text);
+                var z = x + y;
+                if (y == 0)
+                {
+                    this.labelResult.Text = "除数不能为0";
+                }
+                else
+                {
+                    this.labelResult.Text = z.ToString();
+                }
+            } catch (Exception ex)
             {
-                this.labelResult.Text = "除数不能为0";
+                this.labelResult.Text = ex.Message;
             }
-            else
-            {
-                this.labelResult.Text = z.ToString();
-            }
+            
             
         }
 

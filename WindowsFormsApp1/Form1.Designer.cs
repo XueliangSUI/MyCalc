@@ -59,9 +59,9 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.labelResult);
-            this.panel4.Location = new System.Drawing.Point(91, 67);
+            this.panel4.Location = new System.Drawing.Point(18, 67);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(192, 74);
+            this.panel4.Size = new System.Drawing.Size(307, 74);
             this.panel4.TabIndex = 2;
             // 
             // labelResult
